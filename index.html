@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <style>
+        .text1 {
+            border: 1px solid steelblue;
+            background-color: lightgray;
+            padding: 40px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Dom event handler</h1>
+    <button onclick="console.log('6');">click me </button>
+    <br> <br>
+    <button onclick="document.body.style.backgroundColor = 'green'">make green</button>
+    <button onclick="makered()">make red </button>
+    <button id="purple">MAke purple</button>
+    <button id="blue">Make blue</button>
+    <button id="pink">Make pink</button>
+    <button onclick="kader()">clicked</button>
+
+    <div class="text1">
+        <h1 id="text">text change</h1>
+        <button onclick="change()">click here</button>
+    </div>
+
+
+    <button id="event">handle event by event listner</button>
+
+    <script>
+        document.getElementById('event').addEventListener('click', function () {
+            const change = document.getElementById('text');
+            change.innerText = 'change by add event listner'
+        })
+    </script>
+
+    <script src="event.js"></script>
+</body>
+
+</html>
