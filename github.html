@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Delete</title>
+</head>
+<body>
+    <h1 id="info">secret info </h1>
+
+    <input id="delete" type="text" placeholder="pls type Delete">
+    <button id="button" disabled>event</button>
+    
+
+
+
+
+
+
+
+    <script>
+        document.getElementById('delete').addEventListener('keyup',function(event){
+            const text = event.target.value;
+            const deletebtn = document.getElementById('button')
+            if(text === 'delete'){
+                deletebtn.removeAttribute('disabled')
+            }
+            else{
+                deletebtn.setAttribute('disabled',true)
+            }
+        })
+
+        // document.getElementById('button').addEventListener('click', function(){
+        //     const secret = document.getElementById('info');
+        //     secret.style.display = 'none'
+        // })
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    <script>
+        // document.getElementById('text-field').addEventListener('focus', function(){
+        //     console.log('inside inpurt field');
+        // })
+        // document.getElementById('text-field').addEventListener('blur', function(){
+        //     console.log('outside inpurt field');
+        // })
+        document.getElementById('text-field').addEventListener('keyup', function(event){
+            console.log(event.target.value);
+        })
+
+        document.getElementById('button').addEventListener('click',function(){
+            console.log('clicked');
+        })
+    </script> -->
+
+</body>
+</html>
