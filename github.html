@@ -19,16 +19,16 @@
 
 
     <script>
-        document.getElementById('delete').addEventListener('keyup',function(event){
+       document.getElementById('delete').addEventListener('keyup', function(event){
             const text = event.target.value;
-            const deletebtn = document.getElementById('button')
-            if(text === 'delete'){
-                deletebtn.removeAttribute('disabled')
+            const btndelet = document.getElementById('button');
+            if( text === 'delete'){
+                btndelet.removeAttribute('disabled')
             }
             else{
-                deletebtn.setAttribute('disabled',true)
+                btndelet.setAttribute('disabled', true)
             }
-        })
+       })
 
         // document.getElementById('button').addEventListener('click', function(){
         //     const secret = document.getElementById('info');
